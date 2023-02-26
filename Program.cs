@@ -6,10 +6,10 @@ int factorialValue = 0;
 int fibonacciValue = 0;
 
 void TypeActionsTakenValue()
-	{
+{
 	Console.WriteLine($"Number of actions taken by the iteration method:{actionCounter} \n \n");
 	actionCounter = 0;
-	}
+}
 long CalculateIterationalFactorial(int n)
 {
 	long suma = 1;
@@ -18,16 +18,15 @@ long CalculateIterationalFactorial(int n)
 		return 1;
 		actionCounter++;
 	}
-	else
-	{
-		for (int i = 0; i < n; i++)
-		{
-			suma += suma * i;
-			actionCounter++;
 
-		}
-		return suma;
+	for (int i = 0; i < n; i++)
+	{
+		suma += suma * i;
+		actionCounter++;
+
 	}
+	return suma;
+
 }
 long CalculateRecursionFactorial(int n)
 {
@@ -42,7 +41,7 @@ long CalculateIterationalFibonacci(int n)
 	long fibSecond = 1;
 	for (int i = 1; i < n; i++)
 	{
-		fibValue =  fibFirst + fibSecond;
+		fibValue = fibFirst + fibSecond;
 		fibFirst = fibSecond;
 		fibSecond = fibValue;
 		actionCounter++;
