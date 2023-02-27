@@ -7,7 +7,7 @@ namespace AlgoLabRecursion.Calculator
     {
         int ActionCounter { get; }
         long calculatedValue { get; }
-        Stopwatch Stopwatch { get; set; }
+        Stopwatch Stopwatch { get;}
         public void WriteCalculations();
 	}
 }

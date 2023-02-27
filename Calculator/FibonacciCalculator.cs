@@ -12,7 +12,7 @@ namespace AlgoLabRecursion.Calculator
 		IPerformanceWriter performanceWriter = Factory.CreatePerformacneWriter;
 		public int ActionCounter { get => actionCounter; }
 		public long calculatedValue { get => fibValue; }
-		public Stopwatch Stopwatch { get => stopwatch; set { stopwatch = value; } }
+		public Stopwatch Stopwatch { get => stopwatch;}
 		long CalculateIterationalFibonacci(int n)
 		{
 			long fibValue = 0;

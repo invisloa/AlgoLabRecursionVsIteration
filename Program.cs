@@ -6,4 +6,4 @@ using System.Diagnostics;
 IActionCalculator factCalculator = Factory.CreateFactorialCalculator;
 IActionCalculator fibCalculator = Factory.CreateFibonacciCalculator;
 factCalculator.WriteCalculations();
-fibCalculator.WriteCalculations();
+fibCalculator.WriteCalculations();  
