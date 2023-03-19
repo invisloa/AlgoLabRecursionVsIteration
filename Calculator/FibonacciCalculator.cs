@@ -38,13 +38,11 @@ namespace AlgoLabRecursion.Calculator
 
 			if (n == 0)
 			{
-				actionCounter++;
 				stopwatch.Stop();
 				return 0;
 			}
 			else if (n == 1)
 			{
-				actionCounter++;
 				stopwatch.Stop();
 				return 1;
 			}
